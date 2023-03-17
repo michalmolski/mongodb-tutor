@@ -8,7 +8,6 @@ import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-
 public class EventRemoteStartAttributes {
 
     @JsonAlias({"prev_latitude"})

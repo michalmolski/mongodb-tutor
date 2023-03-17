@@ -1,14 +1,10 @@
-package com.mmol.mongotutor.model;
+package com.mmol.mongotutor.dto;
 
 import java.sql.Timestamp;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("sentevents")
 @Data
-public class SentEventTable {
-    @Id
+public class Event {
     private Long eventId;
 
     private String eventClassId;
@@ -17,7 +13,7 @@ public class SentEventTable {
 
     private Timestamp eventDetectTimestamp;
 
-    private EventRemoteStartAttributes attributes;
+    private String attributes;
 
     private String businessId;
 
