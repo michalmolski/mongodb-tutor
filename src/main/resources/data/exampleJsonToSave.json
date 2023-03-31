@@ -1,0 +1,9 @@
+{
+  "attributes": "{{\"prev_longitude\":18.46084,\"prev_latitude\":49.717955,\"prev_time\":1678432932000000,\"metrics\":[{\"dist\":1.8340745304845423,\"timediff\":84000000}],\"class\":\"REMOTE_START\"}}",
+  "businessId": "Z21-AF81HC-1",
+  "eventAlarm": false,
+  "eventClassId": "remote_start",
+  "eventDetectTimestamp": "2023-03-09T11:36:54.000",
+  "eventId": 1,
+  "viovodeship": "mazowieckie"
+}
