@@ -11,7 +11,10 @@ Useful mongo terminal client commands:
 
 >mongosh
 
-db.getUsers()
-db.auth(user, user)
-show dbs
-use senteventlist
+>db.getUsers()
+
+>db.auth(user, user)
+
+>show dbs
+
+>use senteventlist
