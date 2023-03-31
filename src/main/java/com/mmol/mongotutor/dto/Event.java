@@ -1,11 +1,12 @@
 package com.mmol.mongotutor.dto;
 
-import java.sql.Timestamp;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import lombok.Data;
+import com.mongodb.client.model.geojson.Point;
 
 @Data
-public class Event {
+public class Event implements Serializable {
     private Long eventId;
 
     private String eventClassId;
@@ -19,4 +20,6 @@ public class Event {
     private String businessId;
 
     private String viovodeship;
+
+    private Point gpsPoint;
 }

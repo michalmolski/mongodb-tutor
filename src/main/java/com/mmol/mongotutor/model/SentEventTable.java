@@ -1,5 +1,6 @@
 package com.mmol.mongotutor.model;
 
+import com.mongodb.client.model.geojson.Point;
 import java.time.LocalDateTime;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -22,4 +23,6 @@ public class SentEventTable {
     private String businessId;
 
     private String viovodeship;
+
+    private Point gpsPoint;
 }
