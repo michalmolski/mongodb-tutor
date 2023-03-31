@@ -1,6 +1,7 @@
 package com.mmol.mongotutor.dto;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import lombok.Data;
 
 @Data
@@ -11,7 +12,7 @@ public class Event {
 
     private boolean eventAlarm;
 
-    private Timestamp eventDetectTimestamp;
+    private LocalDateTime eventDetectTimestamp;
 
     private String attributes;
 

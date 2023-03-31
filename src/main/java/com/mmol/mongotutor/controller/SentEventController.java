@@ -1,6 +1,7 @@
 package com.mmol.mongotutor.controller;
 
 import com.mmol.mongotutor.dto.Event;
+import com.mmol.mongotutor.model.SentEventTable;
 import com.mmol.mongotutor.service.EventService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -28,7 +29,7 @@ public class SentEventController {
 
     @GetMapping(value = "/find")
     public ResponseEntity<String> getEventById(@RequestParam Long eventId)  {
-        eventService.getEvent(eventId);
-        return ResponseEntity.ok().build();
+        SentEventTable eventTable = eventService.getEvent(eventId);
+        return ResponseEntity.ok(eventTable.toString());
     }
 }

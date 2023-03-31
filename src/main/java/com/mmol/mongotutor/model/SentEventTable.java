@@ -1,6 +1,6 @@
 package com.mmol.mongotutor.model;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,7 +15,7 @@ public class SentEventTable {
 
     private boolean eventAlarm;
 
-    private Timestamp eventDetectTimestamp;
+    private LocalDateTime eventDetectTimestamp;
 
     private EventRemoteStartAttributes attributes;
 

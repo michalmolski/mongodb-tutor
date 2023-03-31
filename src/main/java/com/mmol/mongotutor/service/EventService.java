@@ -20,10 +20,10 @@ public class EventService {
     sentEventTableRepository.save(eventMapper.map(event));
   }
 
-  public Event getEvent(Long eventId) {
-    SentEventTable persistedEvent =
-        Optional.of(sentEventTableRepository.findSentEventTableByEventId(eventId))
-            .orElseThrow(RuntimeException::new);
-    return eventMapper.map(persistedEvent);
+  public SentEventTable getEvent(Long eventId) {
+    Optional<SentEventTable> persistedEvent =
+        sentEventTableRepository.findSentEventTableByEventId(eventId);
+    persistedEvent.orElseThrow(RuntimeException::new);
+    return persistedEvent.get();
   }
 }
