@@ -19,5 +19,6 @@ public class EventRemoteStartAttributes {
     @JsonAlias({"prev_time"})
     private Long prevDate;
 
+    @JsonAlias({"metrics"})
     private List<Metrics> metrics;
 }
