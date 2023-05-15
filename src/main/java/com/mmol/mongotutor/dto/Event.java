@@ -7,7 +7,7 @@ import com.mongodb.client.model.geojson.Point;
 
 @Data
 public class Event implements Serializable {
-    private Long eventId;
+    private String eventId;
 
     private String eventClassId;
 

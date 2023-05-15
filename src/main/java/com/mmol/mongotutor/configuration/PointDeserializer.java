@@ -1,6 +1,5 @@
 package com.mmol.mongotutor.configuration;
 
-import com.fasterxml.jackson.core.JacksonException;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationContext;
@@ -24,12 +23,4 @@ public class PointDeserializer extends JsonDeserializer<Point> {
         return new Point(position);
     }
 
-//    @Override
-//    public Point deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException {
-//        // Get the array of coordinates from the JSON
-//        double[] coordinates = jsonParser.getCodec().readValue(jsonParser, double[].class);
-//
-//        // Create and return a new Point object with the coordinates
-//        return new Point(new Position(coordinates[0], coordinates[1]));
-//    }
 }

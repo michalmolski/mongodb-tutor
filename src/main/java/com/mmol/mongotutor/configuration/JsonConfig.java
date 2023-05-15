@@ -14,6 +14,6 @@ public class JsonConfig {
         SimpleModule module = new SimpleModule();
         module.addDeserializer(Point.class, new PointDeserializer());
 
-        return new ObjectMapper().registerModule(module);
+        return new ObjectMapper().registerModule(module).findAndRegisterModules();
     }
 }

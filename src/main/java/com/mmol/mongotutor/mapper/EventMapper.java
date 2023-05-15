@@ -24,6 +24,7 @@ public class EventMapper {
         return sentEvent;
     }
 
+
     public Event map(SentEventTable sentEventTable){
         String attributes = sentEventTable.getAttributes().toString();
         Event event = SentEventMapper.INSTANCE.map(sentEventTable);
