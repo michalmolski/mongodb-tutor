@@ -26,7 +26,18 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: user
       ME_CONFIG_MONGODB_ADMINPASSWORD: user
       ME_CONFIG_MONGODB_URL: mongodb://user:user@mongo:27017/
-
+  postgres:
+    container_name: gps_postgres
+#    image: postgis/postgis:9.6-3.0
+    image: postgis/postgis:15-3.3
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_USER: gps
+      POSTGRES_PASSWORD: gps
+      POSTGRES_DB: gps
 volumes:
   mongodb_data_container:
+    driver: local
+  postgres_data:
     driver: local

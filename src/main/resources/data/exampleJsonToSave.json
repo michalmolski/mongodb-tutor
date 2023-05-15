@@ -4,6 +4,10 @@
   "eventAlarm": false,
   "eventClassId": "remote_start",
   "eventDetectTimestamp": "2023-03-09T11:36:54.000",
-  "eventId": 1,
-  "viovodeship": "mazowieckie"
+  "viovodeship": "mazowieckie",
+  "gpsPoint":
+  {
+    "type": "Point",
+    "coordinates": [19.4567, 52.1234]
+  }
 }
